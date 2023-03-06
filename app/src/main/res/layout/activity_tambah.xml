@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="6dp"
+    android:background="@drawable/background_4"
+    tools:context=".TambahActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TAMBAH DATA PLAYER"
+        android:fontFamily="serif"
+        android:textSize="25dp"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:layout_gravity="center_horizontal"/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/et_nama"
+        android:hint="Nama Player"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingStart="16dp"
+        android:background="@drawable/bg_corner"
+        android:textSize="21sp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/et_nomor"
+        android:hint="Nomor Punggung"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingStart="16dp"
+        android:background="@drawable/bg_corner"
+        android:textSize="21sp"
+        android:layout_marginTop="20dp"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/et_club"
+        android:hint="Club"
+        android:textSize="21sp"
+        android:textStyle="bold"
+        android:textColor="@color/black"
+        android:paddingStart="16dp"
+        android:background="@drawable/bg_corner"
+        android:layout_marginTop="20dp"
+        />
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:id="@+id/btn_simpan"
+        android:text="Save"
+        android:backgroundTint="#BDAFAF"
+        android:textSize="24sp"
+        android:gravity="center_horizontal"
+        android:textAllCaps="false"
+        android:textColor="@color/black"
+        android:layout_margin="36dp"
+        app:cornerRadius="10dp"
+        />
+
+
+</LinearLayout>
