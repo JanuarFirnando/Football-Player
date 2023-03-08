@@ -1,5 +1,6 @@
 package com.opitassy.footballplayer;
 
+import android.content.ContentValues;
 import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
@@ -34,6 +35,20 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
 
     @Override
     public void onUpgrade(SQLiteDatabase db, int oldVersion, int newVersion) {
-
+        String query = "DROP TABLE IF EXISTS " + TABLE_NAME;
+        db.execSQL(query);
+        onCreate(db);
     }
+    public long TambahPlayer(String nama, String nomor, String klub)
+    {
+        SQLiteDatabase db = this.getWritableDatabase();
+        ContentValues cv = new ContentValues();
+
+        cv.put(FIELD_NAME, nama);
+        cv.put(FIELD_NOMOR, nomor);
+        cv.put(FIELD_KLUB, klub);
+        long eksekusi = db.insert(TABLE_NAME, null, cv);
+        return eksekusi;
+    }
+
 }

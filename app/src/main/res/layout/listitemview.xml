@@ -7,7 +7,7 @@
 
     android:elevation="32dp">
 
-    <androidx.constraintlayout.widget.ConstraintLayout
+    <LinearLayout
         android:layout_width="match_parent"
         android:background="@drawable/background_1"
         android:layout_height="wrap_content"
@@ -23,8 +23,7 @@
             android:textSize="36sp"
             android:textStyle="bold"
             android:fontFamily="serif-monospace"
-            app:layout_constraintTop_toTopOf="true"
-            app:layout_constraintStart_toStartOf="true"
+
             />
         <TextView
             android:id="@+id/tv_nomor"
@@ -34,8 +33,7 @@
             android:textColor="@color/black"
             android:textSize="24sp"
             android:fontFamily="serif"
-            app:layout_constraintTop_toBottomOf="@id/tv_nama"
-            app:layout_constraintStart_toStartOf="true"
+
             />
         <TextView
             android:id="@+id/tv_club"
@@ -45,10 +43,9 @@
             android:text="Club"
             android:textColor="@color/black"
             android:textSize="24sp"
-            app:layout_constraintTop_toBottomOf="@id/tv_nomor"
-            app:layout_constraintStart_toStartOf="true"
+
             />
 
 
-    </androidx.constraintlayout.widget.ConstraintLayout>
+    </LinearLayout>
 </androidx.cardview.widget.CardView>

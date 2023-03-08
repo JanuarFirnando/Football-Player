@@ -30,6 +30,9 @@
         android:background="@drawable/bg_corner"
         android:textSize="21sp"
         android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_person_24"
+        android:drawableTint="#3C492E"
+        android:drawablePadding="6dp"
         />
     <EditText
         android:layout_width="match_parent"
@@ -42,6 +45,9 @@
         android:background="@drawable/bg_corner"
         android:textSize="21sp"
         android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_checkroom_24"
+        android:drawableTint="#3C492E"
+        android:drawablePadding="6dp"
         />
     <EditText
         android:layout_width="match_parent"
@@ -54,6 +60,9 @@
         android:paddingStart="16dp"
         android:background="@drawable/bg_corner"
         android:layout_marginTop="20dp"
+        android:drawableStart="@drawable/baseline_currency_yen_24"
+        android:drawableTint="#3C492E"
+        android:drawablePadding="6dp"
         />
     <com.google.android.material.button.MaterialButton
         android:layout_width="match_parent"
@@ -68,6 +77,19 @@
         android:layout_margin="36dp"
         app:cornerRadius="10dp"
         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        >
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/figure1"
+            />
+
+
+    </LinearLayout>
 
 
 </LinearLayout>
