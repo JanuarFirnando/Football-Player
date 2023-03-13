@@ -2,6 +2,7 @@ package com.opitassy.footballplayer;
 
 import android.content.ContentValues;
 import android.content.Context;
+import android.database.Cursor;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
@@ -49,6 +50,19 @@ public class MyDatabaseHelper extends SQLiteOpenHelper {
         cv.put(FIELD_KLUB, klub);
         long eksekusi = db.insert(TABLE_NAME, null, cv);
         return eksekusi;
+    }
+    public Cursor bacaDataPlayer()
+    {
+        SQLiteDatabase db = this.getReadableDatabase();
+        String query = "SELECT * FROM " + TABLE_NAME + " ORDER BY " + FIELD_NAME;
+
+        Cursor varCursor = null;
+        if(db != null)
+        {
+            varCursor = db.rawQuery(query,null);
+        }
+
+        return varCursor;
     }
 
 }
